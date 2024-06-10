@@ -6,16 +6,12 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "node src/index.ts",
-    "build": "rimraf dist && tsc && cpx \"dist/**/*\" public",
+    "build": "tsc",
     "add-build": "git add dist",
     "ts.check": "tsc --project tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
