@@ -1,4 +1,3 @@
-import colors from 'colors';
 import server from "./config/server/server";
 import mongoDB from './database/mongo/connection';
 import { envs } from './config/plugin/env-var';
@@ -12,7 +11,7 @@ const connectDB = envs.CONNECTDB;
 //$ SERVER START:
 const upServer = () => {
   server.listen(PORT, () => {
-    console.log(colors.italic(`Server listening on port ${PORT}`));
+    console.log(`Server listening on port ${PORT}`);
   })
 
 }
