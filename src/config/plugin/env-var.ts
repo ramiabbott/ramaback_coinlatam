@@ -3,8 +3,7 @@ import * as env from "env-var";
 
 export const envs = {
   PORT: env.get("PORT").required().asPortNumber(),
-
-
+  URL_GOOGLE: env.get("URL_GOOGLE").required().asString(),
   PROD: env.get("PROD").required().asBool(),
   MONGO_URI: env.get("MONGO_URI").required().asString(),
   MONGO_DB_NAME: env.get("MONGO_DB_NAME").required().asString(),
