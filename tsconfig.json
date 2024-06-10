@@ -1,13 +1,16 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
+        "module": "CommonJS",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "target": "ESNext",
+        "forceConsistentCasingInFileNames": true, 
+        "target": "ES6",
         "noImplicitAny": true,
+        "strict": true,
+        "skipLibCheck": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "rootDir": "./src",
         "baseUrl": ".",
         "paths": {
