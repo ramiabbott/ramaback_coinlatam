@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "start": "node src/index.ts",
+    "start": "nodemon --watch 'src/**/*.ts'",
     "build": "tsc",
     "add-build": "git add dist",
     "ts.check": "tsc --project tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
